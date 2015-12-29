@@ -1,1 +1,16 @@
 /* Empty. Add your own CSS if you like */
+.background {
+	background: url(../img/background.jpg) center; 
+	background-size: cover;
+}
+.login-bg {
+	margin: auto;
+	width: 90%
+}
+.login-bg .input-label {
+    color: #FFF;
+}
+
+.login-bg input[type="text"] {
+	color: #FFF;
+}

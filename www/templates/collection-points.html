@@ -1,0 +1,12 @@
+<ion-view view-title="Waste Collection">
+  <ion-content ng-class="{expanded:isExpanded}">
+  	<ion-list class="animate-ripple">
+	    <ion-item nav-clear menu-close ng-repeat="point in points" class="item-icon-right item-avatar">
+	        <img ng-src="{{point.image._url}}">
+	        <h2>{{point.name}}</h2>
+	        <p>{{point.address}}</p>
+	        <i class="icon ion-location"></i>
+	    </ion-item>
+	</ion-list>
+  </ion-content>
+</ion-view>

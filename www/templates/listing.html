@@ -1,0 +1,33 @@
+<ion-view view-title="Issues Listing">
+    <ion-content ng-class="{expanded:isExpanded}" class="animate-fade-slide-in">
+        <div class="item card-item row" ng-repeat="issue in issues" ng-if="$index % 2 === 0">
+            <div class="card stable-bg ink ink-dark col col-50" ng-if="$index < issues.length">
+                <div class="item item-text-wrap">
+                    <strong>{{issues[$index].title}}</strong> 
+                    <p>{{issues[$index].description}}</p>
+                    <a class="image"><img ng-src="{{issues[$index].image._url}}">
+                    </a>
+                    <div class="card-footer text-right">
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> {{issues[$index].createdAt}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card stable-bg ink ink-dark col col-50" ng-if="$index + 1 < issues.length">
+                <div class="item item-text-wrap">
+                    <strong>{{issues[$index + 1].title}}</strong> 
+                    <p>{{issues[$index + 1].description}}</p>
+                    <a class="image">
+                        <img ng-src="{{issues[$index + 1].image._url}}">
+                    </a>
+                    <div class="card-footer text-right">
+                        <div class="pull-left">
+                            <i class="icon ion-clock"></i> {{issues[$index + 1].createdAt}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view view-title="Report" align-title="left">
+    <ion-content class="background">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1 style="color:white">Waste Aware</h1>
+                <i class="icon ion-trash-b" style="font-size: 500%"></i>
+            </div>
+        </div>
+        <div class="list login-bg">
+            <label class="item item-input"> 
+                <input ng-model="report.title" type="text" highlight-color="balanced" placeholder="Title"> 
+            </label>
+            <label class="item item-input"> 
+                <input ng-model="report.description" placeholder="Description" highlight-color="energized" type="text">
+            </label>
+            </br>
+            <button ng-click="captureImage()" class="button button-small button-border icon-left ion-camera button-assertive-900">
+                    Photo
+            </button>
+        </div>
+        
+        
+        <div class="padding">
+            <button ng-click="save()" class="button button-full button-assertive ink">Submit</button>
+        </div>
+    </ion-content>
+</ion-view>
